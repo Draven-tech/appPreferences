@@ -9,23 +9,22 @@
 <ion-content [fullscreen]="true">
   <ion-item>
     <ion-label>Option 1</ion-label>
-    <ion-toggle [(ngModel)]="option1"></ion-toggle>
+    <ion-toggle [(ngModel)]="option1" slot="end"></ion-toggle>
   </ion-item>
   
   <ion-item>
     <ion-label>Option 2</ion-label>
-    <ion-toggle [(ngModel)]="option2"></ion-toggle>
+    <ion-toggle [(ngModel)]="option2" slot="end"></ion-toggle>
   </ion-item>
   
   <ion-item>
     <ion-label>Option 3</ion-label>
-    <ion-toggle [(ngModel)]="option3"></ion-toggle>
+    <ion-toggle [(ngModel)]="option3" slot="end"></ion-toggle>
   </ion-item>
 
   <ion-item>
     <ion-label>Range</ion-label>
     <ion-range [(ngModel)]="value" min="0" max="100" step="1" pin="true" snaps="true" color="primary">
-      <ion-label>Value: </ion-label>
       <ion-label slot="start">0</ion-label>
       <ion-label slot="end">100</ion-label>
     </ion-range>
@@ -37,27 +36,27 @@
 
   <ion-item>
     <ion-label>Checkbox 1</ion-label>
-    <ion-checkbox [(ngModel)]="checkbox1"></ion-checkbox>
+    <ion-checkbox [(ngModel)]="checkbox1" slot="start"></ion-checkbox>
   </ion-item>
 
   <ion-item>
     <ion-label>Checkbox 2</ion-label>
-    <ion-checkbox [(ngModel)]="checkbox2"></ion-checkbox>
+    <ion-checkbox [(ngModel)]="checkbox2" slot="start"></ion-checkbox>
   </ion-item>
 
   <ion-item>
     <ion-label>Checkbox 3</ion-label>
-    <ion-checkbox [(ngModel)]="checkbox3"></ion-checkbox>
+    <ion-checkbox [(ngModel)]="checkbox3" slot="start"></ion-checkbox>
   </ion-item>
 
   <ion-item>
     <ion-label>Radio Option 1</ion-label>
-    <ion-radio [(ngModel)]="radio1" value="option1"></ion-radio>
+    <ion-radio [(ngModel)]="radio1" slot="start"></ion-radio>
   </ion-item>
 
   <ion-item>
     <ion-label>Radio Option 2</ion-label>
-    <ion-radio [(ngModel)]="radio2" value="option2"></ion-radio>
+    <ion-radio [(ngModel)]="radio2" slot="start"></ion-radio>
   </ion-item>
 
   <ion-button expand="full" (click)="resetSettings()">RESET ALL SETTINGS</ion-button>
